@@ -30,6 +30,13 @@ Define Class FoxLibManager As Custom
         This.aProcList[This.nProcCounter] = tcProcName
     EndFunc
 && ======================================================================== &&
+&& Function AddBoth
+&& ======================================================================== &&
+	Function AddBoth (tcEntity As String) As Void
+		this.AddClass(tcEntity)
+		This.AddProcedure(tcEntity)
+	EndFunc
+&& ======================================================================== &&
 && Function LoadProcedures
 && ======================================================================== &&
     Function LoadProcedures As Variant
